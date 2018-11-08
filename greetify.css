@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Frijole|Lato|Poiret+One');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(80, 125, 100, 0.7) url("https://images.pexels.com/photos/1124960/pexels-photo-1124960.jpeg?auto=compress&cs=tinysrgb&h=350")  no-repeat center fixed;
+    background-size: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#headernav {
+    display: table-row;
+    background: transparent;
+    font-family: 'lato';
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+}
+
+
+#headernav .navbar-header,
+#headernav .navbar-right li {
+    display: block;
+    vertical-align: middle;
+}
+
+#headernav .navbar-header .navbar-brand,
+#headernav .navbar-right li a {
+    display: table-cell;
+    color: ghostwhite;
+    padding: 5px 10px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 2px solid transparent;
+}
+
+#headernav .navbar-header .navbar-brand {
+    font-size: 30px;
+    font-family: 'Poiret One'
+}
+
+.landing-page {
+    display: grid;
+    text-align: center;
+    -webkit-perspective: 2000px;
+    /* Chrome, Safari, Opera  */
+    perspective: 2000px;
+    width: 80vw;
+    height: 100vh;
+    margin: auto
+}
+
+.sunny-heading {
+    margin: auto;
+    -webkit-transform: rotateX(60deg) rotateZ(-30deg);
+    /* Chrome, Safari, Opera  */
+    transform: rotateX(60deg) rotateZ(-30deg);
+}
+
+.slide-cover {
+    position: absolute;
+    transform-origin: right;
+    background-color: #231e1e;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    animation: hide-cover .5s ease-in;
+    transform: scaleX(0);
+}
+
+@keyframes hide-cover {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+h1 {
+    font-family: 'Frijole';
+    font-size: 50px;
+    color:black;
+    background: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: top left;
+    background-size: cover;
+    line-height: 13vh;
+    animation: sunny-animation 10s infinite alternate 0s;
+}
+
+@keyframes sunny-animation {
+    0% {
+        background-position: 47% 27%;
+    }
+    5% {
+        background-position: 47% 27%;
+    }
+    10% {
+        line-height: 11.5vh;
+        letter-spacing: -.1vw
+    }
+    20% {
+        line-height: 13vh;
+        letter-spacing: 1.3vw
+    }
+    30% {
+        background-position: 50% 70%;
+        line-height: 11vh;
+        letter-spacing: .15vw
+    }
+    35% {
+        background-position: 50% 70%;
+    }
+    40% {
+        line-height: 12.5vh;
+        letter-spacing: 1.2vw
+    }
+    50% {
+        line-height: 11vh;
+        letter-spacing: 0vw
+    }
+    60% {
+        background-position: bottom left;
+        line-height: 13.5vh;
+        letter-spacing: 1.3vw
+    }
+    70% {
+        line-height: 11vh;
+        letter-spacing: .5w
+    }
+    80% {
+        line-height: 10.5vh;
+        letter-spacing: 0vw
+    }
+    90% {
+        line-height: 13vh;
+        letter-spacing: 1.2vw
+    }
+    95% {
+        background-position: bottom right;
+    }
+    100% {
+        background-position: bottom right;
+        line-height: 12vh;
+        letter-spacing: 0vw
+    }
+}
+
+h2 {
+    font-family: 'Fredericka the great';
+    font-size: 3vw;
+    color: white;
+   /* background: url("https://images.pexels.com/photos/34107/milky-way-stars-night-sky.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center;
+    background-size: contain;
+}
+
+#headernav .navbar-right li a.btn-proto {
+    border: 2px solid coral;
+    border-radius: 5px;
+    font-family: 'lato';
+    vertical-align: middle;
+}
+
+#headernav .navbar-right li a.btn-proto:hover {
+    background-color: coral;
+    color: #231e1e;
+}
